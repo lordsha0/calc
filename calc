@@ -1,0 +1,13 @@
+#!/usr/bin/sh
+
+while getopts a:d:m:s:h: option
+do
+case "${option}"
+in
+a) /home/sha0/documents/calc/calc.py a $2 $3;;
+d) /home/sha0/documents/calc/calc.py d $2 $3;;
+m) /home/sha0/documents/calc/calc.py m $2 $3;;
+s) /home/sha0/documents/calc/calc.py s $2 $3;;
+h) echo 'Please specify an operator and numbers.';;
+esac
+done
