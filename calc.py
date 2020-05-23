@@ -3,7 +3,6 @@
 import sys
 
 try:
-    print(sys.argv[1])
     if sys.argv[1] == 'a':
         print(float(sys.argv[2]) + float(sys.argv[3]))
     if sys.argv[1] == 'd':
